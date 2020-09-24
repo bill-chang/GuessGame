@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FFFF0000</color>
+    <color name="green">#FF00FF00</color>
+
+    <color name="blue">#FF0000FF</color>
+    <color name="indigo">#4b0082</color><!--靛青色 -->
+    <color name="darkblue">#00008b</color><!--暗蓝色 -->
+    <color name="mediumblue">#0000cd</color><!--中兰色 -->
+    <color name="midnightblue">#191970</color><!--中灰兰色 -->
+    <color name="navy">#000080</color><!--海军色 -->
+    <color name="royalblue">#4169e1</color><!--皇家蓝 -->
+    <color name="azure">#f0ffff</color><!--天蓝色 -->
+    <color name="skyblue">#87ceeb</color><!--天蓝色 -->
+    <color name="deepskyblue">#00bfff</color><!--深天蓝色 -->
+    <color name="lightskyblue">#87cefa</color><!--亮天蓝色 -->
+    <color name="lightseagreen">#20b2aa</color><!--亮海蓝色 -->
+    <color name="lightblue">#add8e6</color><!--亮蓝色 -->
+    <color name="powderblue">#b0e0e6</color><!--粉蓝色 -->
+    <color name="aliceblue">#f0f8ff</color><!--艾利斯兰 -->
+    <color name="mediumslateblue">#7b68ee</color><!--中暗蓝色 -->
+    <color name="slateblue">#6a5acd</color><!--石蓝色 -->
+    <color name="darkslateblue">#483d8b</color><!--暗灰蓝色 -->
+    <color name="mediumseagreen">#3cb371</color><!--中海蓝 -->
+
+    <color name="gray">#FF888888</color>
+    <color name="lightgray">#FF444444</color>
+    <color name="darkgray">#FFCCCCCC</color>
+
+    <color name="limegreen">#32cd32</color><!--橙绿色 -->
+    <color name="lime">#00ff00</color><!--酸橙色 -->
+    <color name="yellow">#FFFFFF00</color>
+    <color name="wheat">#f5deb3</color><!--浅黄色 -->
+    <color name="khaki">#f0e68c</color><!--黄褐色 -->
+    <color name="burlywood">#deb887</color><!--实木色 -->
+    <color name="bisque">#ffe4c4</color><!--桔黄色 -->
+    <color name="lightyellow">#ffffe0</color><!--亮黄色 -->
+    <color name="darkgoldenrod">#b8860b</color><!--暗金黄色 -->
+    <color name="darkorange">#ff8c00</color><!--暗桔黄色 -->
+    <color name="lightgoldenrodyellow">#fafad2</color><!--亮金黄色 -->
+    <color name="lemonchiffon">#fffacd</color><!--柠檬绸色 -->
+
+    <color name="cyan">#FF00FFFF</color>
+    <color name="pink">#FFFF00FF</color>
+    <color name="transparent">#00000000</color>
+</resources>

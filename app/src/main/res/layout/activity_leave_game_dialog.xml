@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:paddingBottom="10dp"
+    android:paddingEnd="20dp"
+    android:paddingStart="20dp"
+    android:paddingTop="10dp"
+    android:background="@drawable/dialog"
+    tools:context=".LeaveGameDialog">
+
+    <TextView
+        android:id="@+id/leaveGame_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do you want to exit the game?"
+        android:textSize="20sp"
+        android:textColor="@color/darkblue"
+        android:fontFamily="@font/scopeone"
+        android:gravity="center"
+        android:layout_marginTop="85dp"
+        android:padding="20dp"
+        />
+
+    <Button
+        android:id="@+id/leaveGame_No"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_bg1"
+        android:backgroundTint="@color/darkslateblue"
+        android:textSize="18sp"
+        android:fontFamily="@font/magic_dreams"
+        android:text="No"
+        android:textColor="@color/white"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="50dp"
+        />
+
+    <Button
+        android:id="@+id/leaveGame_Yes"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_bg2"
+        android:backgroundTint="@color/darkorange"
+        android:textSize="18sp"
+        android:fontFamily="@font/magic_dreams"
+        android:text="Yes"
+        android:textColor="@color/white"
+        android:layout_marginTop="160dp"
+        android:layout_toRightOf="@+id/leaveGame_No"
+        android:layout_marginLeft="30dp"
+        android:onClick="doLeaveGame"
+        />
+
+</RelativeLayout>

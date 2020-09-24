@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "746526440432",
+    "firebase_url": "https://guessgame-50fb4.firebaseio.com",
+    "project_id": "guessgame-50fb4",
+    "storage_bucket": "guessgame-50fb4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746526440432:android:632b4f950feba6b6b4fb35",
+        "android_client_info": {
+          "package_name": "tw.org.iii.bill.guessgame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746526440432-7cer8hiuihij83068c2he98pr308ffjd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDng2z2vkWAmiw2S1Ti5bqAK7v5SQI6hVg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746526440432-7cer8hiuihij83068c2he98pr308ffjd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

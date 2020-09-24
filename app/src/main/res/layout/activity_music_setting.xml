@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:paddingBottom="10dp"
+    android:paddingEnd="20dp"
+    android:paddingStart="20dp"
+    android:paddingTop="10dp"
+    android:background="@drawable/dialog"
+    tools:context=".MusicSettingActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do you want to mute the music?"
+        android:textSize="20dp"
+        android:textColor="@color/navy"
+        android:fontFamily="@font/scopeone"
+        android:gravity="center"
+        android:layout_marginTop="85dp"
+        android:padding="20dp"
+        />
+
+    <ToggleButton
+        android:id="@+id/music_mute"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/sound_selector"
+        android:backgroundTint="@color/navy"
+        android:textOff=""
+        android:textOn="" />
+
+</LinearLayout>

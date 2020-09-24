@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/final_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".GameActivity">
+
+    <LinearLayout
+        android:id="@+id/left_layout"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FF0"
+        >
+        <LinearLayout
+            android:id="@+id/left_layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="#ffd000"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="doInfo"
+                android:text="房間資訊"
+                android:textSize="20sp"
+                android:fontFamily="@font/chinese2"
+                android:background="@drawable/button_bg3"
+                android:backgroundTint="@color/black"
+                android:layout_marginTop="8dp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:onClick="doReport"
+                android:text="檢舉"
+                android:background="@drawable/button_bg3"
+                android:fontFamily="@font/chinese2"
+                android:backgroundTint="@color/black"
+                />
+
+            <ToggleButton
+                android:id="@+id/game_soundMute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/game_soundselector"
+                android:textOff=""
+                android:textOn=""
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:id="@+id/game_leave_btn"
+                android:fontFamily="@font/chinese2"
+                android:onClick="doLeave"
+                android:text="離開"
+                android:background="@drawable/button_bg3"
+                android:backgroundTint="@color/black"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/left_layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#ffd000"
+            android:layout_weight="6"
+            android:padding="5dp"
+            >
+        <ListView
+            android:id="@+id/game_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/windows_bgwhite"
+            android:padding="10dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/right_layout"
+        android:orientation="vertical"
+        android:layout_width="100dp"
+        android:layout_weight="6"
+        android:layout_height="match_parent"
+        android:background="#ffd000"
+        >
+
+        <LinearLayout
+            android:id="@+id/right_layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginTop="0dp"
+
+            >
+            <RelativeLayout
+
+                android:id="@+id/container_painter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+                <tw.org.iii.bill.guessgame.MyView2
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_white"
+
+                    />
+
+                <ProgressBar
+                    android:id="@+id/game_progressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:backgroundTint="@color/navy"
+                    android:layout_alignParentBottom="true"
+                    android:max="600"
+                    android:progress="600"
+
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/right_layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/right_layout_top"
+            android:layout_alignParentBottom="true"
+            android:background="#00f"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:id="@+id/right_container_bottom_left"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/right_layout_top"
+                android:layout_weight="1"
+                android:background="@color/darkorange"
+                android:padding="0dp"
+                android:orientation="vertical"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:padding="0dp"
+                    android:text="對答區"
+                    android:clickable="false"
+                    />
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_above="@+id/chat_left_bot"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                        <ListView
+                            android:id="@+id/left_lv"
+                            android:layout_width="match_parent"
+                            android:layout_height="350dp"
+                            android:background="@drawable/windows_black"
+                            android:alpha="0.9"
+                            />
+                    </RelativeLayout>
+                </ScrollView>
+                <RelativeLayout
+                    android:id="@+id/chat_left_bot"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:padding="0dp"
+
+                    >
+                    <EditText
+                        android:id="@+id/chat_answer_et"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#fff"
+                        android:textColor="@color/black"
+                        />
+
+                    <Button
+                        android:id="@+id/chat_answer_bt"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="送出"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:onClick="checkAnswer"
+                        android:layout_toRightOf="@+id/chat_answer_et"
+                         />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/right_container_bottom_right"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/right_container_bottom_left"
+                android:layout_weight="1"
+                android:background="@color/mediumseagreen"
+                android:paddingBottom="0dp">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:text="聊天室"
+                    android:clickable="false"
+                    />
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_above="@+id/chat_right_bot"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                        <ListView
+                            android:id="@+id/right_lv"
+                            android:layout_width="match_parent"
+                            android:layout_height="350dp"
+                            android:background="@drawable/windows_black"
+                            android:alpha="0.9"
+                            />
+                    </RelativeLayout>
+                </ScrollView>
+                <RelativeLayout
+                    android:id="@+id/chat_right_bot"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:padding="0dp"
+
+                    >
+                    <EditText
+                        android:id="@+id/chat_right_et"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#fff"
+                        android:textColor="@color/black"
+                        />
+
+                    <Button
+                        android:id="@+id/sendMessage"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="送出"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:onClick="rightSendMessage"
+
+                        android:layout_toRightOf="@+id/chat_right_et"
+                        />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

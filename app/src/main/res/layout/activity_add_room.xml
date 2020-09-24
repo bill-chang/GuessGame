@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddRoomActivity"
+    android:background="@drawable/background_blue"
+    >
+
+    <TextView
+        android:id="@+id/room_customFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DrawGuess"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/humble_boys"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background_white"
+        android:layout_margin="5dp"
+        >
+
+        <FrameLayout
+            android:id="@+id/addRoom_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:layout_marginTop="5dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                >
+
+                <Button
+                    android:id="@+id/add_leftBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/btn_shape"
+                    android:text="＜"
+                    android:textSize="15dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000000"
+                    />
+
+                <ImageSwitcher
+                    android:id="@+id/roomDataImg"
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/add_leftBtn"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/cat" />
+
+                <Button
+                    android:id="@+id/add_rightBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/roomDataImg"
+                    android:background="@drawable/btn_shape"
+                    android:text="＞"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            >
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/add_Players"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                />
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/add_Time"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_toRightOf="@+id/add_Players"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/startIt"
+                android:layout_width="170dp"
+                android:layout_height="55dp"
+                android:text="創建房間"
+                android:textSize="25sp"
+                android:backgroundTint="@color/blue"
+                android:background="@drawable/button_bg3"
+                android:fontFamily="@font/magic_dreams"
+                android:onClick="startIt"
+                />
+
+            <Button
+                android:id="@+id/BackBtn"
+                android:layout_width="170dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="102dp"
+                android:layout_toRightOf="@+id/startIt"
+                android:onClick="backToMain"
+                android:text="返回"
+                android:textSize="25sp"
+                android:backgroundTint="@color/blue"
+                android:fontFamily="@font/magic_dreams"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
